@@ -24,5 +24,6 @@ public class sec
         }
         System.out.println(sl);
         System.out.println(sl.length());
+        sc.close();
     }
 }
