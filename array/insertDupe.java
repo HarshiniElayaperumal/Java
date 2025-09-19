@@ -7,7 +7,23 @@ public class insertDupe {
         {
             if(num==k) count++;
         }
-        
+        for(int i=n-1;i>=0;i--)
+        {
+            int newIndex=i+count;
+            if(newIndex<n)
+            {
+                arr[newIndex]=arr[i];
+            }
+            if(arr[i]==k)
+            {
+                count--;
+                if(i+count<n)
+                {
+                    arr[i+count]=k;
+                }
+            }
+        }
+
     }
      public static void main(String[] args)
     {
